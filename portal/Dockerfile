@@ -1,7 +1,7 @@
-FROM nginx:1.25-alpine
+FROM nginx:1.27-alpine
 
-LABEL maintainer="Felipe Novais - 26174866"
+WORKDIR /
 
-COPY ./html/ /usr/share/nginx/html/
+COPY ./site/ /usr/share/nginx/html/
 
 EXPOSE 80
